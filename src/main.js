@@ -1,8 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
 
-Vue.config.productionTip = false
+//Tailwind
+import "./assets/css/tailwind.css";
+
+//Store
+import store from "@/store/index.js";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  store,
+  render: (h) => h(App),
+}).$mount("#app");
